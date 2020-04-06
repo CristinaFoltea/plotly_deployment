@@ -14,6 +14,7 @@ function init() {
 
 function optionChanged(value) {
   d3.json("samples.json").then((data) => {
+    console.log(data)
     buildMetadata(data.metadata, value);
     buildCharts(data.metadata, data.samples, value);
   })
