@@ -94,22 +94,22 @@ function buildWashingFrequencyChart(frequence = 0) {
     type: 'pie',
     showlegend: false
   }];
-22
-var layout = {
-  shapes:[{
-      type: 'path',
-      fillcolor: '#9E2D2F',
-      path,
-      line: {
-        color: '#9E2D2F'
-      }
-    }],
-  title: '<b>Belly Button Washing frequency</b> <br> Scrubs per week',
-  height: 500,
-  width: 500,
-  xaxis: {visible: false, range: [-1, 1]},
-  yaxis: {visible:false, range: [-1, 1]}
-};
+
+  var layout = {
+    shapes:[{
+        type: 'path',
+        fillcolor: '#9E2D2F',
+        path,
+        line: {
+          color: '#9E2D2F'
+        }
+      }],
+    title: '<b>Belly Button Washing frequency</b> <br> Scrubs per week',
+    height: 500,
+    width: 500,
+    xaxis: {visible: false, range: [-1, 1]},
+    yaxis: {visible:false, range: [-1, 1]}
+  };
 
   Plotly.newPlot('gauge', data, layout);
 }
